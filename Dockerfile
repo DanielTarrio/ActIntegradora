@@ -28,9 +28,10 @@ LABEL \
   email="daniel..tarrio@gmail.com" \
   description="Actividad integradora Curso Docker y Kubernetes UTN BA."
 
-#ENV [define:envs]
+# Valor por defecto, si no se pasa ninguno
 ARG TZ=America/Argentina/Buenos_Aires
 
+#ENV [define:envs]
 ENV TZ=${TZ}
 
 
