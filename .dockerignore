@@ -1,0 +1,27 @@
+# Git
+.git/
+.gitignore
+
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Docker
+Dockerfile
+docker-compose.yaml
+.dockerignore
+
+# Secrets
+*.pem
+*.key
+secrets/

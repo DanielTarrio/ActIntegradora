@@ -1,10 +1,13 @@
-version: '3.8'
-
 services:
+  # Asigna un nombre fijo al contenedor para identificarlo fácilmente.
   react-app:
     build:
+      # 'context: .' indica que el contexto de construcción es el directorio actual.
       context: .
+      # Especifica el archivo que se usará para construir la imagen.
       dockerfile: Dockerfile
+
+ # Mapeo de puertos en formato "Host:Contenedor".
     ports:
       - "8888:8888"
     volumes:
