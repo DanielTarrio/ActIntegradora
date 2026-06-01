@@ -2,12 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: react-ingress
-  annotations:
-    # Si usas NGINX, esta anotación es común
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: mi-app.local  # Puedes cambiarlo por tu dominio o IP
+  # - host: mi-app.local // Configuro para que acepte cualquier url (ip)
+  - host:
     http:
       paths:
       - path: /
