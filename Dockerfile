@@ -43,4 +43,7 @@ EXPOSE 8888
 FROM base
 
 # Comando para ejecutar la aplicación de React + Vite en modo desarrollo con acceso externo
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "8888"]
+# CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "8888"]
+# Comando para ejecutar la aplicación de React + Vite en modo desarrollo con acceso externo y hosts permitidos
+# Comando usando la variable de entorno para permitir todos los hosts en desarrollo
+CMD ["sh", "-c", "VITE_DEV_SERVER_ALLOWED_HOSTS=all npm run dev -- --host 0.0.0.0 --port 8888"]
