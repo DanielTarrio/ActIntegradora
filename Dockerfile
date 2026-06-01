@@ -25,7 +25,7 @@ USER 1001
 #LABEL [define:Etiquetas]
 LABEL \
   author="Daniel Tarrio" \
-  email="daniel..tarrio@gmail.com" \
+  email="daniel.tarrio@gmail.com" \
   description="Actividad integradora Curso Docker y Kubernetes UTN BA."
 
 # Valor por defecto, si no se pasa ninguno
